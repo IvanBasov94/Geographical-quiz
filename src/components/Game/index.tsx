@@ -13,7 +13,7 @@ type Question = {
 interface GameProps {
    step: number,
    question: Question,
-   onClickVariant: any,
+   onClickVariant: (index: number) => void,
 }
 
 const Game: React.FC<GameProps> = ({ step, question, onClickVariant }) => {
